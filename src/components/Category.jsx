@@ -38,12 +38,12 @@ const SLink = styled(NavLink) `
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-right: 2rem;
+    //margin-right: 2rem;
     text-decoration: none;
     background: linear-gradient(35deg, #494949, #313131);
     width: 6rem;
     height: 6rem;
-    cursos: pointer;
+    cursor: pointer;
     transform: scale(0.8);
 
     h4{
@@ -59,6 +59,15 @@ const SLink = styled(NavLink) `
 
         svg, h4{
             color: white;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        margin-right: 0;
+        svg{
+            height: 70%;
+        }
+        h4{
+            height: 30%;
         }
     }
 `;

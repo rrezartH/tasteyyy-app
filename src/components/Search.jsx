@@ -16,7 +16,7 @@ function Search() {
     <FormStyle onSubmit={submitHandler}>
         <div>
             <FaSearch></FaSearch>
-            <input onChange={(e) => setInput(e.target.value)} type="text" value={input}/>
+            <input onChange={(e) => setInput(e.target.value)} type="text" value={input} placeholder="Type an ingredient... eg. Cookie"/>
         </div>
     </FormStyle>
   )
@@ -46,6 +46,9 @@ const FormStyle = styled.form`
         transform: translate(100%, -50%);
         color: white;
     }
+    @media screen and (max-width: 640px) {
+    margin: 0px 16px;
+}
 `
 
 export default Search

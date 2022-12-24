@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import {GiKnifeFork} from "react-icons/gi"
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Search />
         <Category />
         <Pages />
+        <Footer />
       </div>
     </BrowserRouter>
   );
@@ -32,9 +34,9 @@ const Logo = styled(Link)`
 `
 
 const Nav = styled.div`
-  padding: 4rem 0rem;
+  padding: 2rem 0rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   svg{
     font-size: 2rem;

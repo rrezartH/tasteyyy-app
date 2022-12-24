@@ -16,7 +16,7 @@ function Search() {
     <FormStyle onSubmit={submitHandler}>
         <div>
             <FaSearch></FaSearch>
-            <input onChange={(e) => setInput(e.target.value)} type="text" value={input} placeholder="Type an ingredient... eg. Cookie"/>
+            <input onChange={(e) => setInput(e.target.value)} type="text" value={input} placeholder="Search food recipes"/>
         </div>
     </FormStyle>
   )
@@ -38,6 +38,9 @@ const FormStyle = styled.form`
         border-radius: 1rem;
         outline: none;
         width: 100%;
+        ::placeholder {
+            font-size: 1rem;
+        }
     }
     svg{
         position: absolute;

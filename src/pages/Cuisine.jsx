@@ -48,6 +48,7 @@ const Grid = styled(motion.div)`
 `
 
 const Card = styled.div`
+    transition: all 0.2s ease-out;
     img{
         width: 100%;
         border-radius: 2rem;
@@ -58,6 +59,9 @@ const Card = styled.div`
     h4{
         text-align: center;
         padding: 1rem;
+    }
+    :hover{
+        transform: scale(1.1);
     }
 `
 

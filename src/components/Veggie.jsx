@@ -70,7 +70,9 @@ const Card = styled.div`
     border-radius: 2rem;
     overflow: hidden;
     position: relative;
-
+    :hover img{
+        transform: scale(1.2);
+    }
     img{
         position: absolute;
         left: 0;
@@ -78,6 +80,8 @@ const Card = styled.div`
         height: 100%;
         object-fit: cover;
         border-radius: 2rem;
+        transition: all 0.2s ease-out;
+
     }
     p{
         position: absolute;

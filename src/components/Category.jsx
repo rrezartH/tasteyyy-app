@@ -30,6 +30,8 @@ const List = styled.div`
     display: flex;
     justify-content: center;
     margin: 2rem 0rem;
+    transition: all 1s ease-out;
+
 `;
 
 const SLink = styled(NavLink) `
@@ -45,7 +47,7 @@ const SLink = styled(NavLink) `
     height: 6rem;
     cursor: pointer;
     transform: scale(0.8);
-
+    transition: all 0.2s ease-out;
     h4{
         color: white;
         font-size: 0.8rem;
@@ -56,11 +58,16 @@ const SLink = styled(NavLink) `
     }
     &.active{
         background: linear-gradient(to right, #f27121, #e94057);
-
         svg, h4{
             color: white;
         }
+    }    
+
+    :hover{
+        transform: scale(0.9);
+        opacity: 0.8;
     }
+
     @media screen and (max-width: 640px) {
         margin-right: 0;
         svg{

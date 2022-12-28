@@ -82,6 +82,13 @@ const DetailWrapper = styled.div`
   img{
     border-radius: 1rem;
   }
+  button{
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    :hover{
+      opacity: 0.9;
+    }
+  }
 
   @media screen and (max-width: 640px) {
     margin: 32px 0px;
